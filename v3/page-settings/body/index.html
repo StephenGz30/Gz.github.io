@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://volantis.js.org/archives/">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://volantis.js.org/v3/page-settings/body/">
   <!-- 渲染优化 -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
       <link rel="dns-prefetch" href="https://unpkg.com">
@@ -87,17 +87,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Chase" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档 - Chase</title>
+  <title>页面自定义布局 - Chase</title>
   <meta name="keywords" content="Volantis,Hexo,Hexo主题,Blog,博客">
   <meta desc name="description" content="Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。 - Our Team - Chase">
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chase">
-<meta property="og:url" content="https://volantis.js.org/archives/">
+<meta property="og:title" content="页面自定义布局">
+<meta property="og:url" content="https://volantis.js.org/v3/page-settings/body/">
 <meta property="og:site_name" content="Chase">
-<meta property="og:description" content="Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。">
+<meta property="og:description" content="正文布局默认是文章+评论： front-matter---body: [article, comments]---  如果你想把相关文章卡片显示在评论前，可以这样写： front-matter---body: [article, related_posts, comments]---  如果想全局修改，在主题配置文件中的 layout.on_page.body 中设置。 显示迷你音乐播放器标题右边">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-04-14T17:16:05.179Z">
+<meta property="article:modified_time" content="2024-03-27T15:49:34.000Z">
 <meta property="article:author" content="Our Team">
 <meta property="article:tag" content="Volantis,Hexo,Hexo主题,Blog,博客">
 <meta name="twitter:card" content="summary">
@@ -2477,7 +2479,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style="opacity: 0">
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style="opacity: 0">
   <div class="container">
   <div id="wrapper">
     <div class="nav-sub">
@@ -2784,7 +2786,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class="cover-wrapper  dock" style="display: ;">
+      <div id="none" class="cover-wrapper page dock" style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2847,31 +2849,222 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
-			
-			
-				
-				
-					
-						
-						<h2>2024</h2>
-					
-						<div class="timenode">
-								<a class="meta" href="/news/2017-10-24/">
-									<time>04-15</time>
-									
-										团队致谢
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-page" id="page" itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://volantis.js.org/v3/page-settings/body/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Chase">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Chase">
+    <meta itemprop="description" content="Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        页面自定义布局
+      </h1>
+      <div class="new-meta-box">
+        
+          
+            
+<div class="new-meta-item author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class="author" target="_blank" href="https://github.com/volantis-x/" rel="external nofollow noopener noreferrer">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Volantis Team</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-04-15T01:16:05+08:00">
+  <a class="notlink">
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年4月15日</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="story post-story"><h2 id="正文布局"><a href="#正文布局" class="headerlink" title="正文布局"></a>正文布局</h2><p>默认是文章+评论：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">body:</span> [<span class="string">article</span>, <span class="string">comments</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你想把相关文章卡片显示在评论前，可以这样写：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">body:</span> [<span class="string">article</span>, <span class="string">related_posts</span>, <span class="string">comments</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想全局修改，在主题配置文件中的 <code>layout.on_page.body</code> 中设置。</p>
+</div><div class="story post-story"><h2 id="显示迷你音乐播放器"><a href="#显示迷你音乐播放器" class="headerlink" title="显示迷你音乐播放器"></a>显示迷你音乐播放器</h2><p>标题右边显示迷你音乐播放器，支持的字段有：<code>server</code>、<code>type</code>、<code>id</code>。</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">music:</span></span><br><span class="line"> <span class="attr">server:</span> <span class="string">netease</span>   <span class="comment"># netease, tencent, kugou, xiami, baidu</span></span><br><span class="line"> <span class="attr">type:</span> <span class="string">song</span>        <span class="comment"># song, playlist, album, search, artist</span></span><br><span class="line"> <span class="attr">id:</span> <span class="number">16846091</span>      <span class="comment"># song id / playlist id / album id / search keyword</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<div class="note play"><p>实际效果见： <a href="/contributors/">#contributors</a></p></div>
+
+</div><div class="story post-story"><h2 id="显示-meta-标签"><a href="#显示-meta-标签" class="headerlink" title="显示 meta 标签"></a>显示 meta 标签</h2><p>文章顶部和底部的日期、分类、更新日期、标签、分享等属于 meta 标签。<br>顶部的为 <code>header</code>，底部的为 <code>footer</code>，取值见主题配置文件中的 meta 库。</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line"><span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line"><span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line"> <span class="attr">header:</span> [<span class="string">title</span>, <span class="string">author</span>, <span class="string">date</span>, <span class="string">category</span>, <span class="string">counter</span>, <span class="string">top</span>]</span><br><span class="line"> <span class="attr">footer:</span> [<span class="string">updated</span>, <span class="string">tags</span>, <span class="string">share</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+<p>像404、关于页面就可以完全隐藏：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line"> <span class="attr">header:</span> []</span><br><span class="line"> <span class="attr">footer:</span> []</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="居中标题模式"><a href="#居中标题模式" class="headerlink" title="居中标题模式"></a>居中标题模式</h2><p>如果标题居中且下方不想显示任何 meta 信息，可以这样设置：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line"> <span class="attr">header:</span> [<span class="string">centertitle</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="标题右边显示缩略图"><a href="#标题右边显示缩略图" class="headerlink" title="标题右边显示缩略图"></a>标题右边显示缩略图</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">thumbnail:</span> <span class="string">https://img.vim-cn.com/17/0c7b02722686d1527a1df807dae0794d995860.png</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>缩略图仅在文章列表和文章页面显示，不会在归档页面显示。</p>
+</div><div class="story post-story"><h2 id="标题右边显示图标"><a href="#标题右边显示图标" class="headerlink" title="标题右边显示图标"></a>标题右边显示图标</h2><figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">icons:</span> [<span class="string">fas</span> <span class="string">fa-fire</span> <span class="string">red</span>, <span class="string">fas</span> <span class="string">fa-star</span> <span class="string">green</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>图标仅在归档页面中显示，可以用来标注热门文章。</p>
+<div class="note info"><p>可以通过 red &#x2F; blue &#x2F; green &#x2F; yellow &#x2F; orange &#x2F; theme &#x2F; accent 来设置图标的颜色</p></div>
+
+</div><div class="story post-story"><h2 id="meta-区域显示外链按钮"><a href="#meta-区域显示外链按钮" class="headerlink" title="meta 区域显示外链按钮"></a>meta 区域显示外链按钮</h2><p>例如当前文档页面的设置：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">meta:</span></span><br><span class="line"> <span class="attr">footer:</span> [<span class="string">btns</span>]</span><br><span class="line"><span class="attr">btns:</span></span><br><span class="line"> <span class="attr">repo:</span> <span class="string">https://github.com/volantis-x/hexo-theme-volantis</span></span><br><span class="line"> <span class="attr">bug:</span> <span class="string">https://github.com/volantis-x/hexo-theme-volantis/issues/</span></span><br><span class="line"> <span class="attr">doubt:</span> <span class="string">https://github.com/volantis-x/hexo-theme-volantis/issues/</span></span><br><span class="line"> <span class="attr">idea:</span> <span class="string">https://github.com/volantis-x/hexo-theme-volantis/issues/</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>按钮的颜色、图标、标题在主题配置文件中设置。</p>
+</div><div class="story post-story"><h2 id="是否要显示封面"><a href="#是否要显示封面" class="headerlink" title="是否要显示封面"></a>是否要显示封面</h2><p>如果某个页面需要封面，可以这样写：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+
+</div><div class="story post-story"><h2 id="显示侧边栏"><a href="#显示侧边栏" class="headerlink" title="显示侧边栏"></a>显示侧边栏</h2><p>通过自由设置边栏卡片来删减对应页面的冗余信息，提高有价值的信息在页面中的权重。</p>
+<p>如果某个页面不需要侧边栏，可以这样写：</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> []</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>某个页面想指定显示某几个侧边栏，就这样写:</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sidebar:</span> [<span class="string">grid</span>, <span class="string">toc</span>, <span class="string">tags</span>] <span class="comment"># 放置任何你想要显示的侧边栏部件</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="关闭评论"><a href="#关闭评论" class="headerlink" title="关闭评论"></a>关闭评论</h2><p>默认是 <code>body: [article, comments]</code>，如果某个页面不要评论，只需要去掉 <code>comments</code> 即可。</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">body:</span> [<span class="string">article</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="只显示留言板"><a href="#只显示留言板" class="headerlink" title="只显示留言板"></a>只显示留言板</h2><p>如果你想创建一个只有留言板的页面</p>
+<figure class="highlight yaml"><figcaption><span>front-matter</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">body:</span> [<span class="string">comments</span>]</span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</div>
+  </div>
+  
+  
+  
+    
+
+
+  <div class="article-meta" id="bottom">
+    <div class="new-meta-box">
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-03-27T23:49:34+08:00">
+  <a class="notlink">
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>本页文档最后更新于：2024年3月27日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://volantis.js.org/v3/page-settings/body/&title=页面自定义布局 - Chase&summary=">
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://volantis.js.org/v3/page-settings/body/&title=页面自定义布局 - Chase&summary=">
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=https://volantis.js.org/v3/page-settings/body/&title=页面自定义布局 - Chase&summary=">
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+    
+    
+  
+
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/v3/page-settings/body/#comments">
+    </span>
+    <p ct><i class="fa-solid fa-comments"></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id="l_side" itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2880,65 +3073,209 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget text desktop mobile pjax">
+
+
+  
+<section class="widget list group desktop mobile pjax">
   
   <header>
     
-      <i class="fa-brands fa-qq fa-fw" aria-hidden="true"></i><span class="name">联系qq</span>
+      <i class="fa-duotone fa-list-alt fa-fw" aria-hidden="true"></i><span class="name">文档导航 v3</span>
     
   </header>
 
 
   <div class="content">
-    
-      <p>如果你在使用中遇到问题，或者 <strong>加我qq进行反馈</strong>，qq：192713541</p>
-
-    
+    <ul class="list entry navigation">
+      
+        <li><a class="flat-box" title="/v3/getting-started/" href="/v3/getting-started/" active-action="action-v3getting-started">
+          <div class="name">
+            
+            1-1 安装与版本更新
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/site-settings/configuration/" href="/v3/site-settings/configuration/" active-action="action-v3site-settingsconfiguration">
+          <div class="name">
+            
+            2-1 站点配置文件
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/configuration/" href="/v3/theme-settings/configuration/" active-action="action-v3theme-settingsconfiguration">
+          <div class="name">
+            
+            3-1 主题配置文件
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/style/" href="/v3/theme-settings/style/" active-action="action-v3theme-settingsstyle">
+          <div class="name">
+            
+            3-2 自定义主题外观
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/navbar/" href="/v3/theme-settings/navbar/" active-action="action-v3theme-settingsnavbar">
+          <div class="name">
+            
+            3-3 设置网站导航栏
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/footer/" href="/v3/theme-settings/footer/" active-action="action-v3theme-settingsfooter">
+          <div class="name">
+            
+            3-4 设置网站页脚
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/cover/" href="/v3/theme-settings/cover/" active-action="action-v3theme-settingscover">
+          <div class="name">
+            
+            3-5 网站与文章封面
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/layout/" href="/v3/theme-settings/layout/" active-action="action-v3theme-settingslayout">
+          <div class="name">
+            
+            3-6 设置默认布局
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/meta/" href="/v3/theme-settings/meta/" active-action="action-v3theme-settingsmeta">
+          <div class="name">
+            
+            3-7 元数据组件
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/widget/" href="/v3/theme-settings/widget/" active-action="action-v3theme-settingswidget">
+          <div class="name">
+            
+            3-8 卡片式组件
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/comments/" href="/v3/theme-settings/comments/" active-action="action-v3theme-settingscomments">
+          <div class="name">
+            
+            3-9 选择评论系统
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/search/" href="/v3/theme-settings/search/" active-action="action-v3theme-settingssearch">
+          <div class="name">
+            
+            3-10 站内搜索
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/theme-settings/plugins/" href="/v3/theme-settings/plugins/" active-action="action-v3theme-settingsplugins">
+          <div class="name">
+            
+            3-11 第三方插件
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/page-settings/layout/" href="/v3/page-settings/layout/" active-action="action-v3page-settingslayout">
+          <div class="name">
+            
+            4-1 页面布局模板
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/page-settings/front-matter/" href="/v3/page-settings/front-matter/" active-action="action-v3page-settingsfront-matter">
+          <div class="name">
+            
+            4-2 front-matter
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/page-settings/body/" href="/v3/page-settings/body/" active-action="action-v3page-settingsbody">
+          <div class="name">
+            
+            4-3 页面自定义布局
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/page-settings/math/" href="/v3/page-settings/math/" active-action="action-v3page-settingsmath">
+          <div class="name">
+            
+            4-4 渲染公式
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/tag-plugins/text/" href="/v3/tag-plugins/text/" active-action="action-v3tag-pluginstext">
+          <div class="name">
+            
+            5-1 文本和段落标签
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/tag-plugins/link/" href="/v3/tag-plugins/link/" active-action="action-v3tag-pluginslink">
+          <div class="name">
+            
+            5-2 链接、按钮和菜单标签
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/tag-plugins/container/" href="/v3/tag-plugins/container/" active-action="action-v3tag-pluginscontainer">
+          <div class="name">
+            
+            5-3 容器类标签
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/tag-plugins/media/" href="/v3/tag-plugins/media/" active-action="action-v3tag-pluginsmedia">
+          <div class="name">
+            
+            5-4 多媒体标签
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/tag-plugins/hexo/" href="/v3/tag-plugins/hexo/" active-action="action-v3tag-pluginshexo">
+          <div class="name">
+            
+            5-5 Hexo 内置标签
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v3/advanced-settings/" href="/v3/advanced-settings/" active-action="action-v3advanced-settings">
+          <div class="name">
+            
+            6-1 进阶设定
+          </div>
+          
+        </a></li>
+      
+    </ul>
   </div>
 </section>
 
-    
-  
-
-  
-    
-    
-      
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href="/blog/categories/"><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class="name">文章分类</span></a>
-    
-  </header>
-
-
-    <div class="content">
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box" title="/categories/hexo%E6%8A%98%E8%85%BE/" href="/categories/hexo%E6%8A%98%E8%85%BE/" active-action="action-categorieshexoE68A98E885BE"><div class="name">hexo折腾</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E4%BD%A0%E7%9A%84%E5%88%86%E7%B1%BB/" href="/categories/%E4%BD%A0%E7%9A%84%E5%88%86%E7%B1%BB/" active-action="action-categoriesE4BDA0E79A84E58886E7B1BB"><div class="name">你的分类</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" href="/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" active-action="action-categoriesE5AE98E696B9E8B584E8AEAF"><div class="name">官方资讯</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" href="/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" active-action="action-categoriesE5BC80E58F91E5BF83E5BE97"><div class="name">开发心得</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%87%B4%E8%B0%A2/" href="/categories/%E8%87%B4%E8%B0%A2/" active-action="action-categoriesE887B4E8B0A2"><div class="name">致谢</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/" href="/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/" active-action="action-categoriesE8BF9BE998B6E78EA9E6B395"><div class="name">进阶玩法</div><div class="badge">(0)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
 
 
     
@@ -2948,65 +3285,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget grid desktop mobile pjax">
+    
   
-  <header>
-    
-      <i class="fa-solid fa-map-signs fa-fw" aria-hidden="true"></i><span class="name">分类导航</span>
-    
-  </header>
 
-
-  <div class="content">
-    <div class="grid navigation fixed">
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-question-circle fa-fw" aria-hidden="true"></i>
-          
-          常见问题
-        </a>
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-play-circle fa-fw" aria-hidden="true"></i>
-          
-          示例博客
-        </a>
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-handshake fa-fw" aria-hidden="true"></i>
-          
-          特别感谢
-        </a>
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-file-alt fa-fw" aria-hidden="true"></i>
-          
-          测试博文
-        </a>
-      
-        <a class="flat-box" href="/" rel="external nofollow noopener noreferrer" target="_blank" active-action="action-home">
-          
-            <i class="fa-solid fa-file-code fa-fw" aria-hidden="true"></i>
-          
-          主题源码
-        </a>
-      
-        <a class="flat-box" href="/" rel="external nofollow noopener noreferrer" target="_blank" active-action="action-home">
-          
-            <i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>
-          
-          更新日志
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-    
   
 
 
@@ -3014,21 +3295,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-<section class="widget text desktop mobile ">
-  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div">
+    
   <header>
     
-      <i class="fa-solid fa-plus fa-fw" aria-hidden="true"></i><span class="name">社区活动</span>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class="name">本文目录</span>
     
   </header>
 
 
-  <div class="content">
-    
-      
-    
-  </div>
-</section>
+    <div class="content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E6%96%87%E5%B8%83%E5%B1%80"><span class="toc-number">1.</span> <span class="toc-text">正文布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E8%BF%B7%E4%BD%A0%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">显示迷你音乐播放器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA-meta-%E6%A0%87%E7%AD%BE"><span class="toc-number">3.</span> <span class="toc-text">显示 meta 标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%85%E4%B8%AD%E6%A0%87%E9%A2%98%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.</span> <span class="toc-text">居中标题模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E5%8F%B3%E8%BE%B9%E6%98%BE%E7%A4%BA%E7%BC%A9%E7%95%A5%E5%9B%BE"><span class="toc-number">5.</span> <span class="toc-text">标题右边显示缩略图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E5%8F%B3%E8%BE%B9%E6%98%BE%E7%A4%BA%E5%9B%BE%E6%A0%87"><span class="toc-number">6.</span> <span class="toc-text">标题右边显示图标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#meta-%E5%8C%BA%E5%9F%9F%E6%98%BE%E7%A4%BA%E5%A4%96%E9%93%BE%E6%8C%89%E9%92%AE"><span class="toc-number">7.</span> <span class="toc-text">meta 区域显示外链按钮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%AF%E5%90%A6%E8%A6%81%E6%98%BE%E7%A4%BA%E5%B0%81%E9%9D%A2"><span class="toc-number">8.</span> <span class="toc-text">是否要显示封面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E4%BE%A7%E8%BE%B9%E6%A0%8F"><span class="toc-number">9.</span> <span class="toc-text">显示侧边栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E8%AF%84%E8%AE%BA"><span class="toc-number">10.</span> <span class="toc-text">关闭评论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AA%E6%98%BE%E7%A4%BA%E7%95%99%E8%A8%80%E6%9D%BF"><span class="toc-number">11.</span> <span class="toc-text">只显示留言板</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3105,10 +3386,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- pjax占位 -->
   </div>
 
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
           <!--此文件用来存放一些不方便取值的变量-->
@@ -3126,14 +3416,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4199,6 +4489,44 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+      
+
+
+  <div id="snackbar"></div>
+  <script>
+    function Snackbar(){
+      document.getElementById("snackbar").innerHTML=`<div class='snackbar-wrap' theme='warning'>
+      <div class="snackbar-content">
+        <div class='title'><p>过期的文档</p>
+</div>
+        <div class='message'><p>这份文档过于久远，如果您使用的是新版的主题，请查看新版本的文档。</p>
+</div>
+        
+          <div class="action">
+          
+            
+              <a href='/getting-started/'>
+                查看新版文档
+              </a>
+            
+          
+          </div>
+        
+      </div>
+    </div>`
+    }
+  </script>
+
+
+<script>
+
+  Snackbar()
+
+</script>
+
+
+
+
 </pjax>
 
 <script>
@@ -4420,7 +4748,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","sameAs":["https://github.com/volantis-x"],"description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://volantis.js.org/","name":"Chase"}},{"@type":"ListItem","position":2,"item":{"@id":"https://volantis.js.org/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Chase","url":"https://volantis.js.org/","keywords":"Volantis,Hexo,Hexo主题,Blog,博客","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},"publisher":{"@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://volantis.js.org?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/"},"publisher":{"@type":"Organization","name":"Chase","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","sameAs":["https://github.com/volantis-x"],"description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://volantis.js.org/","name":"Chase"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Chase","url":"https://volantis.js.org/","keywords":"Volantis,Hexo,Hexo主题,Blog,博客","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},"publisher":{"@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://volantis.js.org?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"页面自定义布局","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://volantis.js.org/v3/page-settings/body/"},"author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/"},"publisher":{"@type":"Organization","name":"Chase","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://volantis.js.org/v3/page-settings/body/","wordCount":0,"datePublished":"2024-04-14T17:16:05.179Z","dateModified":"2024-03-27T15:49:34.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

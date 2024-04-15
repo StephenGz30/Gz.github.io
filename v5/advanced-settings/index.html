@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://volantis.js.org/archives/">
+  
+  <link rel="canonical" href="https://volantis.js.org/v5/advanced-settings/">
   <!-- 渲染优化 -->
     <meta http-equiv="x-dns-prefetch-control" content="on">
       <link rel="dns-prefetch" href="https://unpkg.com">
@@ -87,17 +87,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Chase" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档 - Chase</title>
+  <title>Volantis: 进阶设定 - Chase</title>
   <meta name="keywords" content="Volantis,Hexo,Hexo主题,Blog,博客">
   <meta desc name="description" content="Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。 - Our Team - Chase">
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chase">
-<meta property="og:url" content="https://volantis.js.org/archives/">
+<meta property="og:title" content="进阶设定">
+<meta property="og:url" content="https://volantis.js.org/v5/advanced-settings/">
 <meta property="og:site_name" content="Chase">
-<meta property="og:description" content="Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。">
+<meta property="og:description" content="设置子模块 将主题添加为子模块                               开始前需要确认不存在 themes&#x2F;volantis 文件夹, 如果有, 请自行删除.sshhttpsgit submodule add git@github.com:volantis-x&#x2F;hexo-theme-volantis.git themes&#x2F;volantisgit submodule a">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-04-14T17:16:05.771Z">
+<meta property="article:modified_time" content="2024-03-27T15:49:34.000Z">
 <meta property="article:author" content="Our Team">
 <meta property="article:tag" content="Volantis,Hexo,Hexo主题,Blog,博客">
 <meta name="twitter:card" content="summary">
@@ -2477,7 +2479,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style="opacity: 0">
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style="opacity: 0">
   <div class="container">
   <div id="wrapper">
     <div class="nav-sub">
@@ -2784,7 +2786,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class="cover-wrapper  dock" style="display: ;">
+      <div id="none" class="cover-wrapper docs dock" style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2847,31 +2849,369 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable blur">
-			
-			
-				
-				
-					
-						
-						<h2>2024</h2>
-					
-						<div class="timenode">
-								<a class="meta" href="/news/2017-10-24/">
-									<time>04-15</time>
-									
-										团队致谢
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://volantis.js.org/v5/advanced-settings/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Chase">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Chase">
+    <meta itemprop="description" content="Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。">
+  </span>
+  
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        进阶设定
+      </h1>
+      <div class="new-meta-box">
+        
+          
+            
+<div class="new-meta-item author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class="author" target="_blank" href="https://github.com/volantis-x/" rel="external nofollow noopener noreferrer">
+    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Volantis Team</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-04-15T01:16:05+08:00">
+  <a class="notlink">
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年4月15日</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="story post-story"><h2 id="设置子模块"><a href="#设置子模块" class="headerlink" title="设置子模块"></a>设置子模块</h2><details yellow open><summary> 将主题添加为子模块 </summary>
+              <div class="content">
+              <div class="note warning"><p>开始前需要确认不存在 themes&#x2F;volantis 文件夹, 如果有, 请自行删除.</p></div><div class="tabs" id="tab-子模块"><ul class="nav-tabs"><li class="tab active"><a class="#子模块-1">ssh</a></li><li class="tab"><a class="#子模块-2">https</a></li></ul><div class="tab-content"><div class="tab-pane active" id="子模块-1"><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git submodule add git@github.com:volantis-x/hexo-theme-volantis.git themes/volantis</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="子模块-2"><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/volantis</span><br></pre></td></tr></table></figure></div></div></div>
+              </div>
+            </details>
+
+</div><div class="story post-story"><h2 id="多人协同"><a href="#多人协同" class="headerlink" title="多人协同"></a>多人协同</h2><p>默认的作者信息在主题配置文件中设置：</p>
+<figure class="highlight yaml"><figcaption><span>blog/themes/volantis/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 文章布局</span></span><br><span class="line"><span class="attr">article:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="attr">body:</span></span><br><span class="line">    <span class="string">...</span></span><br><span class="line">    <span class="attr">meta_library:</span></span><br><span class="line">      <span class="attr">author:</span></span><br><span class="line">        <span class="attr">avatar:</span></span><br><span class="line">        <span class="attr">name:</span> <span class="string">请设置文章作者</span></span><br><span class="line">        <span class="attr">url:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure>
+
+<p>Volantis 支持多个作者在一个站点发布文章，其他作者信息需要写在数据文件中，例如：</p>
+<figure class="highlight yaml"><figcaption><span>blog/source/_data/author.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">Jon:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">Jon</span> <span class="string">Snow</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://cn.bing.com/th?id=AMMS_fc8f99fd41ebd737a71c4e13806db9a0&amp;w=110&amp;h=110&amp;c=7&amp;rs=1&amp;qlt=80&amp;pcl=f9f9f9&amp;cdv=1&amp;dpr=2&amp;pid=16.1</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://gameofthrones.fandom.com/wiki/Jon_Snow</span></span><br><span class="line"><span class="attr">Dany:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">Daenerys</span> <span class="string">Targaryen</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://tse1-mm.cn.bing.net/th?id=OIP.Yax4wLzIFbcBVUa_RsKywQHaLH&amp;w=80&amp;h=80&amp;c=8&amp;rs=1&amp;qlt=90&amp;dpr=2&amp;pid=3.1&amp;rm=2</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">https://gameofthrones.fandom.com/wiki/Daenerys_Targaryen</span></span><br></pre></td></tr></table></figure>
+
+<p>在文章的 front-matter 中新增 <code>author</code> 即可：</p>
+<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Jon Snow | Game of Thrones Wiki | Fandom</span><br><span class="line"><span class="section">author: Jon</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="内容安全策略-CSP"><a href="#内容安全策略-CSP" class="headerlink" title="内容安全策略(CSP)"></a>内容安全策略(CSP)</h2><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 内容安全策略( CSP ) meta 标签 http-equiv=&quot;Content-Security-Policy&quot;</span></span><br><span class="line"><span class="comment"># https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP</span></span><br><span class="line"><span class="comment"># https://content-security-policy.com/</span></span><br><span class="line"><span class="comment"># 也可以设为 false 在 HTTP 标头中设置 https://volantis.js.org/v5/advanced-settings/#设置-HTTP-响应标头</span></span><br><span class="line"><span class="attr">csp:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">content:</span> <span class="string">&quot;</span></span><br><span class="line"><span class="string">    default-src &#x27;self&#x27; https:;</span></span><br><span class="line"><span class="string">    block-all-mixed-content;</span></span><br><span class="line"><span class="string">    base-uri &#x27;self&#x27; https:;</span></span><br><span class="line"><span class="string">    form-action &#x27;self&#x27; https:;</span></span><br><span class="line"><span class="string">    worker-src &#x27;self&#x27; https:;</span></span><br><span class="line"><span class="string">    connect-src &#x27;self&#x27; https: *;</span></span><br><span class="line"><span class="string">    img-src &#x27;self&#x27; data: https: *;</span></span><br><span class="line"><span class="string">    media-src &#x27;self&#x27; https: *;</span></span><br><span class="line"><span class="string">    font-src &#x27;self&#x27; data: https: *;</span></span><br><span class="line"><span class="string">    frame-src &#x27;self&#x27; https: *;</span></span><br><span class="line"><span class="string">    manifest-src &#x27;self&#x27; https: *;</span></span><br><span class="line"><span class="string">    child-src https:;</span></span><br><span class="line"><span class="string">    script-src &#x27;self&#x27; https: &#x27;unsafe-inline&#x27; *;</span></span><br><span class="line"><span class="string">    style-src &#x27;self&#x27; https: &#x27;unsafe-inline&#x27; *;</span></span><br><span class="line"><span class="string">  &quot;</span></span><br><span class="line">  <span class="comment"># 可以使用自动程序替换默认的 &#x27;unsafe-inline&#x27; 和 * 生成更严格的内容安全策略.</span></span><br><span class="line">  <span class="comment"># 另可以参考官网的 gulp 方案.</span></span><br><span class="line">  <span class="comment"># gulpfile.js https://github.com/volantis-x/community/blob/main/gulpfile.js</span></span><br></pre></td></tr></table></figure>
+
+
+</div><div class="story post-story"><h2 id="设置-HTTP-响应标头"><a href="#设置-HTTP-响应标头" class="headerlink" title="设置 HTTP 响应标头"></a>设置 HTTP 响应标头</h2><p>以 <a href="https://developers.cloudflare.com/rules/transform/response-header-modification/create-dashboard/" target="_blank" rel="external nofollow noopener noreferrer">Cloudflare</a> 为例， 在 规则 &gt; 转换规则 &gt; HTTP 响应头修改 中，可以添加以下设置：</p>
+<ul>
+<li>内容安全策略( CSP )</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Content-Security-Policy: default-src &#x27;self&#x27; https:; block-all-mixed-content; base-uri &#x27;self&#x27; https:; form-action &#x27;self&#x27; https:; worker-src &#x27;self&#x27; https:; connect-src &#x27;self&#x27; https: *; img-src &#x27;self&#x27; data: https: *; media-src &#x27;self&#x27; https: *; font-src &#x27;self&#x27; data: https: *; frame-src &#x27;self&#x27; https: *; manifest-src &#x27;self&#x27; https: *; child-src https:; script-src &#x27;self&#x27; https: &#x27;unsafe-inline&#x27; *; style-src &#x27;self&#x27; https: &#x27;unsafe-inline&#x27; *;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP" target="_blank" rel="external nofollow noopener noreferrer">Doc for Content-Security-Policy</a></p>
+<ul>
+<li>不允许在 frame 中展示</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x-frame-options: DENY</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/X-Frame-Options" target="_blank" rel="external nofollow noopener noreferrer">Doc for X-Frame-Options</a></p>
+</div><div class="story post-story"><h2 id="为网站提速"><a href="#为网站提速" class="headerlink" title="为网站提速"></a>为网站提速</h2><h3 id="加载速度"><a href="#加载速度" class="headerlink" title="加载速度"></a>加载速度</h3><ul>
+<li><p>减少不必要的 js 插件，例如字数统计、动态背景。</p>
+</li>
+<li><p>查找并解决拖慢速度的资源，以 Chrome 浏览器为例：</p>
+<ol>
+<li>页面中点击右键，选择「检查」。</li>
+<li>在右边的窗口中「Network」选项卡，并勾选「Disable cache」。</li>
+<li>刷新网页，查看加载速度慢的资源。<br>  3.1. 加载缓慢的图片，建议使用 CDN。<br>  3.2. 加载缓慢的可以不用的 js 插件，建议舍弃。<br>  3.3. 加载缓慢却必须使用的 js 插件，建议下载并自己上传至 CDN。</li>
+</ol>
+</li>
+</ul>
+<h3 id="运行速度"><a href="#运行速度" class="headerlink" title="运行速度"></a>运行速度</h3><ul>
+<li>访问具有动态特效背景（如雪花、粒子等）的网站时，手机很快会发烫变卡，笔记本很快会风扇狂转并且浏览器提示建议关闭此页面。如果你希望网站有好的使用体验请尽量不要安装这类插件。</li>
+</ul>
+</div><div class="story post-story"><h2 id="优化-SEO"><a href="#优化-SEO" class="headerlink" title="优化 SEO"></a>优化 SEO</h2><h3 id="Robots"><a href="#Robots" class="headerlink" title="Robots"></a>Robots</h3><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">seo:</span></span><br><span class="line">  <span class="comment"># When there are no keywords in the article&#x27;s front-matter, use tags as keywords.</span></span><br><span class="line">  <span class="attr">use_tags_as_keywords:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># When there is no description in the article&#x27;s front-matter, use excerpt as the description.</span></span><br><span class="line">  <span class="attr">use_excerpt_as_description:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">robots:</span></span><br><span class="line">    <span class="attr">home_first_page:</span> <span class="string">index,follow</span></span><br><span class="line">    <span class="attr">home_other_pages:</span> <span class="string">noindex,follow</span></span><br><span class="line">    <span class="attr">archive:</span> <span class="string">noindex,follow</span></span><br><span class="line">    <span class="attr">category:</span> <span class="string">noindex,follow</span></span><br><span class="line">    <span class="attr">tag:</span> <span class="string">noindex,follow</span></span><br><span class="line">    <span class="comment"># robots can be written in front-matter</span></span><br></pre></td></tr></table></figure>
+
+<p>在 front-matter 中，可以设置 <code>keywords</code>、<code>description</code>、<code>robots</code> 和 <code>seo_title</code>。其中 <code>seo_title</code> 仅仅用作网页标题，优先级高于 <code>title</code>。</p>
+<ul>
+<li><p>文章内部不要使用 H1 标题。</p>
+</li>
+<li><p>通过死链检测工具检查并删除无法访问的链接。</p>
+</li>
+<li><p>安装 SEO 优化插件：</p>
+<div class="tag link"><a class="link-card" title="hexo-autonofollow" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/liuzc/hexo-autonofollow"><div class="left"><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">hexo-autonofollow</p><p class="url">https://github.com/liuzc/hexo-autonofollow</p></div></a></div>
+<div class="tag link"><a class="link-card" title="hexo-generator-seo-friendly-sitemap" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap"><div class="left"><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">hexo-generator-seo-friendly-sitemap</p><p class="url">https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap</p></div></a></div>
+</li>
+<li><p>页面不要堆砌关键词，不要频繁更改路径。</p>
+</li>
+</ul>
+<h3 id="Open-Graph"><a href="#Open-Graph" class="headerlink" title="Open Graph"></a>Open Graph</h3><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># https://ogp.me/</span></span><br><span class="line"><span class="comment"># https://hexo.io/zh-cn/docs/helpers#open-graph</span></span><br><span class="line"><span class="attr">open_graph:</span></span><br><span class="line">  <span class="attr">image:</span> <span class="string">https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png</span></span><br><span class="line">  <span class="attr">twitter_card:</span> <span class="string">summary</span> <span class="comment"># summary_large_image , summary</span></span><br><span class="line">  <span class="comment">#twitter_id:</span></span><br><span class="line">  <span class="comment">#twitter_site:</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Structured-Data"><a href="#Structured-Data" class="headerlink" title="Structured Data"></a>Structured Data</h3><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># SEO 入门文档: https://developers.google.com/search/docs</span></span><br><span class="line"><span class="comment"># https://schema.org.cn/</span></span><br><span class="line"><span class="comment"># 结构化数据用于更改搜索结果的显示效果</span></span><br><span class="line"><span class="comment"># 目前内置的结构化数据: blogposting, breadcrumblist, organization, person, website</span></span><br><span class="line"><span class="comment"># 目前内置的富媒体搜索结果: 路径(面包屑导航), 徽标(Logo), 站点链接搜索框(SearchAction)</span></span><br><span class="line"><span class="comment"># https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data</span></span><br><span class="line"><span class="comment"># 富媒体搜索结果测试: https://search.google.com/test/rich-results</span></span><br><span class="line"><span class="attr">structured_data:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># 以下是覆盖配置, 默认配置见 scripts/helpers/structured-data/lib/config.js</span></span><br><span class="line">  <span class="attr">data:</span></span><br><span class="line">    <span class="attr">person:</span></span><br><span class="line">      <span class="attr">sns:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="string">https://github.com/volantis-x</span></span><br><span class="line">    <span class="attr">logo:</span></span><br><span class="line">      <span class="attr">path:</span> <span class="string">https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png</span></span><br><span class="line">      <span class="attr">width:</span> <span class="number">192</span></span><br><span class="line">      <span class="attr">height:</span> <span class="number">192</span></span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="使用-CDN"><a href="#使用-CDN" class="headerlink" title="使用 CDN"></a>使用 CDN</h2><p>对于大部分将博客 deploy 到 GitHub 的用户来说，直接加载本地资源速度比较慢，可以使用 jsdelivr 为开源项目提供的 CDN 服务。</p>
+<h3 id="开启方法"><a href="#开启方法" class="headerlink" title="开启方法"></a>开启方法</h3><figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 本地静态文件使用 CDN 加速</span></span><br><span class="line"><span class="comment"># 默认使用 https://unpkg.com/hexo-theme-volantis@&lt;%- theme.info.theme_version %&gt;/source/js/*.js ，注意版本号对应关系！！可以通过修改以下配置项覆盖</span></span><br><span class="line"><span class="comment"># 开发者注意 cdn.enable 设置为 false</span></span><br><span class="line"><span class="attr">cdn:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># CDN 前缀，为空使用默认值，链接最后不加 &quot;/&quot;,</span></span><br><span class="line">  <span class="comment"># 例如： https://gcore.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page 填写最后编译生成的源码CDN地址前缀，此路径下应该含有/js与/css目录,</span></span><br><span class="line">  <span class="comment"># 该配置默认值是：&quot;https://unpkg.com/hexo-theme-volantis@&quot;+ theme.info.theme_version +&quot;/source&quot;</span></span><br><span class="line">  <span class="attr">prefix:</span> <span class="comment">#https://unpkg.com/hexo-theme-volantis/source</span></span><br><span class="line">  <span class="comment"># 以下配置可以覆盖 cdn.prefix,配置项的值可以为空，但是要使用CDN必须依据路径填写配置项的键</span></span><br><span class="line">  <span class="attr">set:</span></span><br><span class="line">    <span class="attr">js:</span></span><br><span class="line">      <span class="attr">app:</span> <span class="string">/js/app.js</span></span><br><span class="line">    <span class="attr">css:</span></span><br><span class="line">      <span class="attr">style:</span> <span class="string">/css/style.css</span> <span class="comment"># (异步加载样式)</span></span><br><span class="line"><span class="comment"># 静态资源版本控制</span></span><br><span class="line"><span class="comment"># 本地文件使用文件内容的hash值作为版本号(app.8c1e7c88.js)  其他为时间戳 (?time=1648684470140)</span></span><br><span class="line"><span class="comment"># 建议静态资源设置标头浏览器缓存一年边缘缓存一个月 cache-control: max-age=86400, s-maxage=31536000 如果有更新记得刷新缓存</span></span><br><span class="line"><span class="attr">cdn_version:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># volantis static 静态资源文件 npm 包 CDN 地址 (后面加 &quot;/&quot; )</span></span><br><span class="line"><span class="comment"># https://github.com/volantis-x/volantis-static</span></span><br><span class="line"><span class="attr">volantis_static_cdn:</span> <span class="string">https://unpkg.com/volantis-static/</span></span><br></pre></td></tr></table></figure>
+
+<div class="note info"><p>如果你需要对样式进行 DIY，可以只关闭 style 文件的 CDN。</p></div>
+
+<p>从V5版本开始，首屏样式采用硬编码的方式写在HTML中。首屏样式内含 cover navbar search 的样式，其他样式放入&#x2F;css&#x2F;style.css异步加载。</p>
+<div class="note warning up"><p>如果你需要对样式进行 DIY，请注意首屏渲染和异步延迟加载的差异。</p></div>
+
+
+<h3 id="自定义-CDN"><a href="#自定义-CDN" class="headerlink" title="自定义 CDN"></a>自定义 CDN</h3><p>如果你把对应的文件上传到自己的 CDN 服务器，可以把对应的链接改为自己的 CDN 链接。</p>
+</div><div class="story post-story"><h2 id="尝试使用-gulp-压缩静态文件"><a href="#尝试使用-gulp-压缩静态文件" class="headerlink" title="尝试使用 gulp 压缩静态文件"></a>尝试使用 gulp 压缩静态文件</h2><h3 id="安装压缩工具"><a href="#安装压缩工具" class="headerlink" title="安装压缩工具"></a>安装压缩工具</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install -g gulp</span><br><span class="line">npm install --save-dev gulp gulp-html-minifier-terser gulp-htmlclean gulp-htmlmin gulp-clean-css gulp-terser gulp-sourcemaps</span><br></pre></td></tr></table></figure>
+
+<h3 id="gulp-配置文件"><a href="#gulp-配置文件" class="headerlink" title="gulp 配置文件"></a>gulp 配置文件</h3><p>参考文档： <a href="https://github.com/gulpjs/gulp" target="_blank" rel="external nofollow noopener noreferrer">gulp</a> <a href="https://github.com/pioug/gulp-html-minifier-terser" target="_blank" rel="external nofollow noopener noreferrer">gulp-html-minifier-terser</a> <a href="https://github.com/anseki/gulp-htmlclean" target="_blank" rel="external nofollow noopener noreferrer">gulp-htmlclean</a> <a href="https://github.com/jonschlinkert/gulp-htmlmin" target="_blank" rel="external nofollow noopener noreferrer">gulp-htmlmin</a> <a href="https://github.com/scniro/gulp-clean-css" target="_blank" rel="external nofollow noopener noreferrer">gulp-clean-css</a> <a href="https://github.com/duan602728596/gulp-terser" target="_blank" rel="external nofollow noopener noreferrer">gulp-terser</a> <a href="https://github.com/gulp-sourcemaps/gulp-sourcemaps" target="_blank" rel="external nofollow noopener noreferrer">gulp-sourcemaps</a></p>
+<details green><summary> gulp 配置文件 </summary>
+              <div class="content">
+              <p><a href="https://github.com/volantis-x/community/blob/main/gulpfile.js" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/volantis-x/community/blob/main/gulpfile.js</a></p><script src="https://gist.github.com/MHuiG/4d443d3bfb10eac961a13e46023581f7.js"></script>
+              </div>
+            </details>
+
+
+<h3 id="运行-gulp"><a href="#运行-gulp" class="headerlink" title="运行 gulp"></a>运行 gulp</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gulp</span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="尝试使用-babel-转换兼容-ES6"><a href="#尝试使用-babel-转换兼容-ES6" class="headerlink" title="尝试使用 babel 转换兼容 ES6"></a>尝试使用 babel 转换兼容 ES6</h2><p>如果想要兼容旧版浏览器，可以尝试使用 <a href="https://github.com/babel/gulp-babel" target="_blank" rel="external nofollow noopener noreferrer">gulp-babel</a> 将 ES6 转换为 ES5。</p>
+<h3 id="安装-gulp-babel-工具"><a href="#安装-gulp-babel-工具" class="headerlink" title="安装 gulp-babel 工具"></a>安装 gulp-babel 工具</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g gulp</span><br><span class="line">npm install --save-dev gulp-babel @babel/core @babel/preset-env</span><br></pre></td></tr></table></figure>
+
+<h3 id="gulp-配置文件-1"><a href="#gulp-配置文件-1" class="headerlink" title="gulp 配置文件"></a>gulp 配置文件</h3><p>参考文档： <a href="https://github.com/gulpjs/gulp" target="_blank" rel="external nofollow noopener noreferrer">gulp</a> <a href="https://github.com/babel/gulp-babel" target="_blank" rel="external nofollow noopener noreferrer">gulp-babel</a></p>
+<details green><summary> gulp 配置文件 </summary>
+              <div class="content">
+              <p><a href="https://github.com/volantis-x/community/blob/main/gulpfile.js" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/volantis-x/community/blob/main/gulpfile.js</a></p><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">gulp.<span class="title function_">src</span>([<span class="string">&#x27;./public/**/*.js&#x27;</span>, <span class="string">&#x27;!./public/**/*.min.js&#x27;</span>, <span class="string">&#x27;!./public/&#123;lib,lib/**&#125;&#x27;</span>, <span class="string">&#x27;!./public/&#123;libs,libs/**&#125;&#x27;</span>, <span class="string">&#x27;!./public/&#123;media,media/**&#125;&#x27;</span>])</span><br><span class="line">  .<span class="title function_">pipe</span>(<span class="title function_">babel</span>(&#123;</span><br><span class="line">    <span class="attr">presets</span>: [<span class="string">&#x27;@babel/preset-env&#x27;</span>]</span><br><span class="line">  &#125;))</span><br><span class="line">  .<span class="title function_">pipe</span>(gulp.<span class="title function_">dest</span>(<span class="string">&#x27;./public&#x27;</span>))</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<h3 id="运行-gulp-1"><a href="#运行-gulp-1" class="headerlink" title="运行 gulp"></a>运行 gulp</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">gulp</span><br></pre></td></tr></table></figure>
+
+</div><div class="story post-story"><h2 id="安装-Service-Worker-服务"><a href="#安装-Service-Worker-服务" class="headerlink" title="安装 Service Worker 服务"></a>安装 Service Worker 服务</h2><h3 id="方案一-安装插件"><a href="#方案一-安装插件" class="headerlink" title="方案一 安装插件"></a>方案一 安装插件</h3><p>安装 <a href="https://github.com/Colsrch/hexo-offline-popup" target="_blank" rel="external nofollow noopener noreferrer">hexo-offline-popup</a>  或者 <a href="https://github.com/JLHwung/hexo-offline" target="_blank" rel="external nofollow noopener noreferrer">hexo-offline</a> 插件，初次加载速度不变，后期切换页面和刷新网页速度越来越快。</p>
+<h3 id="方案二-使用-workbox-自定义配置"><a href="#方案二-使用-workbox-自定义配置" class="headerlink" title="方案二 使用 workbox 自定义配置"></a>方案二 使用 workbox 自定义配置</h3><details green><summary> step 1. 修改 blog/_config.yml 文件。 </summary>
+              <div class="content">
+              <figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 全局导入</span></span><br><span class="line"><span class="attr">import:</span></span><br><span class="line">  <span class="attr">body_end:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script&gt;&quot;serviceWorker&quot;in</span> <span class="string">navigator&amp;&amp;navigator.serviceWorker.register(&quot;/sw.js&quot;).then(function(n)&#123;n.onupdatefound=function()&#123;var</span> <span class="string">e=n.installing;e.onstatechange=function()&#123;switch(e.state)&#123;case&quot;installed&quot;:navigator.serviceWorker.controller?console.log(&quot;Updated</span> <span class="string">serviceWorker.&quot;):console.log(&quot;serviceWorker</span> <span class="string">Sucess!&quot;);break;case&quot;redundant&quot;:console.log(&quot;The</span> <span class="string">installing</span> <span class="string">service</span> <span class="string">worker</span> <span class="string">became</span> <span class="string">redundant.&quot;)&#125;&#125;&#125;&#125;).catch(function(e)&#123;console.log(&quot;Error</span> <span class="string">during</span> <span class="string">service</span> <span class="string">worker</span> <span class="string">registration:&quot;,e)&#125;);</span> <span class="string">&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<details green><summary> step 2. 在 blog/source 中创建 sw.js 文件。 </summary>
+              <div class="content">
+              <p><a href="https://gist.github.com/MHuiG/a423c0a953ed5645840a651c33dcd60c" target="_blank" rel="external nofollow noopener noreferrer">https://gist.github.com/MHuiG/a423c0a953ed5645840a651c33dcd60c</a></p><script src="https://gist.github.com/MHuiG/a423c0a953ed5645840a651c33dcd60c.js"></script>
+              </div>
+            </details>
+
+<div class="note warning up"><p>如果你使用了此方案，修改静态文件后发布网页一定要修改缓存版本号。</p></div>
+
+<h3 id="方案三-参考官网-volantis-sw-js"><a href="#方案三-参考官网-volantis-sw-js" class="headerlink" title="方案三 参考官网 volantis-sw.js"></a>方案三 参考官网 volantis-sw.js</h3><p><a href="https://github.com/volantis-x/community/blob/main/source/volantis-sw.js" target="_blank" rel="external nofollow noopener noreferrer">volantis-sw.js</a></p>
+<p><a href="https://github.com/volantis-x/hexo-theme-volantis/discussions/791" target="_blank" rel="external nofollow noopener noreferrer">discussions&#x2F;791</a></p>
+</div><div class="story post-story"><h2 id="安装「相关文章」插件"><a href="#安装「相关文章」插件" class="headerlink" title="安装「相关文章」插件"></a>安装「相关文章」插件</h2><ol>
+<li><p>安装插件</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">npm i -S hexo-related-popular-posts</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>插件的自定义配置方法：</p>
+<div class="tag link"><a class="link-card" title="hexo-related-popular-posts" target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/tea3/hexo-related-popular-posts"><div class="left"><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">hexo-related-popular-posts</p><p class="url">https://github.com/tea3/hexo-related-popular-posts</p></div></a></div></li>
+</ol>
+<p>如果您使用了头图，可以在站点配置文件中添加以下设置来让相关文章显示正确的文章头图：</p>
+<figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">popularPosts:</span></span><br><span class="line">  <span class="attr">eyeCatchImageAttributeName:</span> <span class="string">headimg</span></span><br></pre></td></tr></table></figure>
+
+<div class="note warning up"><p><strong>注意</strong></p><p>需要升级到 5.0.1 及以上版本才可以支持自定义头图，详见 <a href="https://github.com/tea3/hexo-related-popular-posts/issues/29" target="_blank" rel="external nofollow noopener noreferrer">#29</a></p></div>
+
+</div><div class="story post-story"><h2 id="分析与统计"><a href="#分析与统计" class="headerlink" title="分析与统计"></a>分析与统计</h2><h3 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h3><h4 id="PV-和-UV"><a href="#PV-和-UV" class="headerlink" title="PV 和 UV"></a>PV 和 UV</h4><p>支持 <a href="http://busuanzi.ibruce.info/" target="_blank" rel="external nofollow noopener noreferrer">不蒜子</a> 的访问统计和 <a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">leancloud</a> 统计，在配置文件中设置。</p>
+<ul>
+<li>若你选择 <a href="https://leancloud.app/" target="_blank" rel="external nofollow noopener noreferrer">leancloud</a> 统计, 你还需前往 leancloud 创建应用并填写下面 leancloud 相关配置</li>
+<li>若你选择 <a href="http://busuanzi.ibruce.info/" target="_blank" rel="external nofollow noopener noreferrer">不蒜子</a> 统计, 请取消下面 busuanzi 的配置注释</li>
+</ul>
+<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">analytics:</span></span><br><span class="line">  <span class="attr">busuanzi:</span> <span class="comment">#/libs/busuanzi/js/busuanzi.pure.mini.js #https://gcore.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js</span></span><br><span class="line">  <span class="attr">leancloud:</span> <span class="comment"># 请使用自己的 id &amp; key 以防止数据丢失</span></span><br><span class="line">    <span class="attr">app_id:</span> <span class="comment"># 应用 APP_ID</span></span><br><span class="line">    <span class="attr">app_key:</span> <span class="comment"># 应用 APP_KEY</span></span><br><span class="line">    <span class="attr">custom_api_server:</span> <span class="comment"># 国际版一般不需要写，除非自定义了 API Server</span></span><br></pre></td></tr></table></figure>
+
+<p>我们还支持以下评论系统提供的访问统计: <a href="https://waline.js.org/" target="_blank" rel="external nofollow noopener noreferrer">waline</a>、<a href="https://twikoo.js.org/" target="_blank" rel="external nofollow noopener noreferrer">twikoo</a>、<a href="https://discuss.js.org/" target="_blank" rel="external nofollow noopener noreferrer">discuss</a>、<a href="https://artalk.js.org/" target="_blank" rel="external nofollow noopener noreferrer">artalk</a></p>
+<p>如需使用它们，请将上面 <code>leancloud</code> 和 <code>busuanzi</code> 的所有配置注释，并启用对应评论系统的统计功能</p>
+<h4 id="字数和阅读时长"><a href="#字数和阅读时长" class="headerlink" title="字数和阅读时长"></a>字数和阅读时长</h4><ol>
+<li>安装以下插件：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure></li>
+<li>修改配置文件，将 <code>wordcount</code> 插件打开<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">plugins:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># 文章字数统计、阅读时长，开启需要安装插件: npm i --save hexo-wordcount</span></span><br><span class="line">  <span class="attr">wordcount:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="comment">#true</span></span><br></pre></td></tr></table></figure></li>
+<li>然后修改配置文件，将 <code>wordcount</code> 写入需要显示的 meta 位置：<figure class="highlight yaml"><figcaption><span>blog/_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># 文章布局</span></span><br><span class="line"><span class="attr">article:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># 文章详情页面的文章卡片本体布局方案</span></span><br><span class="line">  <span class="attr">body:</span></span><br><span class="line">    <span class="comment"># 文章顶部信息</span></span><br><span class="line">    <span class="comment"># 从 meta_library 中取</span></span><br><span class="line">    <span class="attr">top_meta:</span> [<span class="string">...</span>, <span class="string">wordcount</span>, <span class="string">...</span>]</span><br><span class="line">    <span class="string">...</span></span><br><span class="line">    <span class="comment"># 文章底部信息</span></span><br><span class="line">    <span class="comment"># 从 meta_library 中取</span></span><br><span class="line">    <span class="attr">bottom_meta:</span> [<span class="string">...</span>, <span class="string">wordcount</span>, <span class="string">...</span>]</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h3><h4 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h4><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">baidu_analytics_key:</span> <span class="string">百度统计的key</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Google-Analytics"><a href="#Google-Analytics" class="headerlink" title="Google Analytics"></a>Google Analytics</h4><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">google_analytics_key:</span> <span class="string">Google</span> <span class="string">Analytics</span> <span class="string">Key</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="腾讯前端性能监控"><a href="#腾讯前端性能监控" class="headerlink" title="腾讯前端性能监控"></a>腾讯前端性能监控</h4><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">tencent_aegis_id:</span> <span class="string">上报</span> <span class="string">id</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="51LA统计"><a href="#51LA统计" class="headerlink" title="51LA统计"></a>51LA统计</h4><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">v6_51_la:</span> <span class="string">应用id</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="灵雀监控"><a href="#灵雀监控" class="headerlink" title="灵雀监控"></a>灵雀监控</h4><figure class="highlight yaml"><figcaption><span>blog/_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">perf_51_la:</span> <span class="string">应用id</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="CNZZ-统计"><a href="#CNZZ-统计" class="headerlink" title="CNZZ 统计"></a>CNZZ 统计</h4><p>请参考 ZYMIN 的这篇教程：</p>
+<div class="tag link"><a class="link-card" title="Hexo hexo+ejs+material x 添加CNZZ统计代码" target="_blank" rel="external nofollow noopener noreferrer" href="https://zymin.cn/arcticle/hexo+ejs+material.html"><div class="left"><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">Hexo hexo+ejs+material x 添加CNZZ统计代码</p><p class="url">https://zymin.cn/arcticle/hexo+ejs+material.html</p></div></a></div>
+
+</div><div class="story post-story"><h2 id="更多进阶玩法"><a href="#更多进阶玩法" class="headerlink" title="更多进阶玩法"></a>更多进阶玩法</h2><p>详见 <a href="https://www.itrhx.com/" target="_blank" rel="external nofollow noopener noreferrer">@TRHX</a> 的这篇博客：</p>
+<div class="tag link"><a class="link-card" title="Hexo 博客主题个性化" target="_blank" rel="external nofollow noopener noreferrer" href="https://www.itbob.cn/article/003/"><div class="left"><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">Hexo 博客主题个性化</p><p class="url">https://www.itbob.cn/article/003/</p></div></a></div>
+
+<p>内含卡片半透明、增加卡通人物、自定义鼠标样式、鼠标特效、烟花特效、彩色滚动字体、网站运行时间、动态浏览器标题、雪花飘落特效等多种详细教程。</p>
+<div class="tag link"><a class="link-card" title="主题官网 #进阶玩法" href="https://volantis.js.org/categories/进阶玩法/"><div class="left"><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><div class="right"><p class="text">主题官网 #进阶玩法</p><p class="url">https://volantis.js.org/categories/进阶玩法/</p></div></a></div>
+
+</div>
+  </div>
+  
+  
+    
+    <div class="footer">
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class="article-meta" id="bottom">
+    <div class="new-meta-box">
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-03-27T23:49:34+08:00">
+  <a class="notlink">
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>本页文档最后更新于：2024年3月27日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title rel="external nofollow noopener noreferrer" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://volantis.js.org/v5/advanced-settings/&title=进阶设定 - Chase&summary=">
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title rel="external nofollow noopener noreferrer" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://volantis.js.org/v5/advanced-settings/&title=进阶设定 - Chase&summary=">
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title rel="external nofollow noopener noreferrer" target="_blank" href="http://service.weibo.com/share/share.php?url=https://volantis.js.org/v5/advanced-settings/&title=进阶设定 - Chase&summary=">
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+    
+    
+      <div class="prev-next">
+        
+          <a class="prev" href="/v5/tag-plugins/">
+            <p class="title"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>标签插件</p>
+            <p class="content">为了兼容老用户，旧的标签插件在重构之前依然沿用旧的格式，即 command + 空格 作为参数分隔符，而部分新增标签插件是 空格 + 英文竖线 + 空格 ，请注意区分。
+
+我们也在探索哪种分隔符...</p>
+          </a>
+        
+        
+          <a class="next" href="/v5/development-api/">
+            <p class="title">开发文档<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+            <p class="content">
+&ensp;Volantis5
+Development API for Volantis
+
+
+
+样式文件说明/source/css/Readme.md
+全局变量volantis我们提供了全局变...</p>
+          </a>
+        
+      </div>
+    
+  
+
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/v5/advanced-settings/#comments">
+    </span>
+    <p ct><i class="fa-solid fa-comments"></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id="l_side" itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2880,65 +3220,89 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget text desktop mobile pjax">
+
+
+  
+<section class="widget list group desktop mobile pjax">
   
   <header>
     
-      <i class="fa-brands fa-qq fa-fw" aria-hidden="true"></i><span class="name">联系qq</span>
+      <i class="fa fa-book fa-fw" aria-hidden="true"></i><span class="name">文档导航 v5.0</span>
     
   </header>
 
 
   <div class="content">
-    
-      <p>如果你在使用中遇到问题，或者 <strong>加我qq进行反馈</strong>，qq：192713541</p>
-
-    
+    <ul class="list entry navigation">
+      
+        <li><a class="flat-box" title="/v5/getting-started/" href="/v5/getting-started/" active-action="action-v5getting-started">
+          <div class="name">
+            
+            1. 开始使用
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/site-settings/" href="/v5/site-settings/" active-action="action-v5site-settings">
+          <div class="name">
+            
+            2. 站点配置
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/theme-settings/" href="/v5/theme-settings/" active-action="action-v5theme-settings">
+          <div class="name">
+            
+            3. 主题配置
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/page-settings/" href="/v5/page-settings/" active-action="action-v5page-settings">
+          <div class="name">
+            
+            4. 页面配置
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/tag-plugins/" href="/v5/tag-plugins/" active-action="action-v5tag-plugins">
+          <div class="name">
+            
+            5. 标签插件
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/advanced-settings/" href="/v5/advanced-settings/" active-action="action-v5advanced-settings">
+          <div class="name">
+            
+            6. 进阶设定
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/development-api/" href="/v5/development-api/" active-action="action-v5development-api">
+          <div class="name">
+            
+            7. 开发文档
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/v5/faq/" href="/v5/faq/" active-action="action-v5faq">
+          <div class="name">
+            
+            8. FAQ
+          </div>
+          
+        </a></li>
+      
+    </ul>
   </div>
 </section>
 
-    
-  
-
-  
-    
-    
-      
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href="/blog/categories/"><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class="name">文章分类</span></a>
-    
-  </header>
-
-
-    <div class="content">
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box" title="/categories/hexo%E6%8A%98%E8%85%BE/" href="/categories/hexo%E6%8A%98%E8%85%BE/" active-action="action-categorieshexoE68A98E885BE"><div class="name">hexo折腾</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E4%BD%A0%E7%9A%84%E5%88%86%E7%B1%BB/" href="/categories/%E4%BD%A0%E7%9A%84%E5%88%86%E7%B1%BB/" active-action="action-categoriesE4BDA0E79A84E58886E7B1BB"><div class="name">你的分类</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" href="/categories/%E5%AE%98%E6%96%B9%E8%B5%84%E8%AE%AF/" active-action="action-categoriesE5AE98E696B9E8B584E8AEAF"><div class="name">官方资讯</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" href="/categories/%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" active-action="action-categoriesE5BC80E58F91E5BF83E5BE97"><div class="name">开发心得</div><div class="badge">(0)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%87%B4%E8%B0%A2/" href="/categories/%E8%87%B4%E8%B0%A2/" active-action="action-categoriesE887B4E8B0A2"><div class="name">致谢</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/" href="/categories/%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95/" active-action="action-categoriesE8BF9BE998B6E78EA9E6B395"><div class="name">进阶玩法</div><div class="badge">(0)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
 
 
     
@@ -2948,64 +3312,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget grid desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-map-signs fa-fw" aria-hidden="true"></i><span class="name">分类导航</span>
-    
-  </header>
-
-
-  <div class="content">
-    <div class="grid navigation fixed">
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-question-circle fa-fw" aria-hidden="true"></i>
-          
-          常见问题
-        </a>
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-play-circle fa-fw" aria-hidden="true"></i>
-          
-          示例博客
-        </a>
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-handshake fa-fw" aria-hidden="true"></i>
-          
-          特别感谢
-        </a>
-      
-        <a class="flat-box" href="/" active-action="action-home">
-          
-            <i class="fa-solid fa-file-alt fa-fw" aria-hidden="true"></i>
-          
-          测试博文
-        </a>
-      
-        <a class="flat-box" href="/" rel="external nofollow noopener noreferrer" target="_blank" active-action="action-home">
-          
-            <i class="fa-solid fa-file-code fa-fw" aria-hidden="true"></i>
-          
-          主题源码
-        </a>
-      
-        <a class="flat-box" href="/" rel="external nofollow noopener noreferrer" target="_blank" active-action="action-home">
-          
-            <i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i>
-          
-          更新日志
-        </a>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
@@ -3014,21 +3320,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-<section class="widget text desktop mobile ">
-  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div">
+    
   <header>
     
-      <i class="fa-solid fa-plus fa-fw" aria-hidden="true"></i><span class="name">社区活动</span>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class="name">本文目录</span>
     
   </header>
 
 
-  <div class="content">
-    
-      
-    
-  </div>
-</section>
+    <div class="content">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%AD%90%E6%A8%A1%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">设置子模块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C"><span class="toc-number">2.</span> <span class="toc-text">多人协同</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%AE%89%E5%85%A8%E7%AD%96%E7%95%A5-CSP"><span class="toc-number">3.</span> <span class="toc-text">内容安全策略(CSP)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE-HTTP-%E5%93%8D%E5%BA%94%E6%A0%87%E5%A4%B4"><span class="toc-number">4.</span> <span class="toc-text">设置 HTTP 响应标头</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E7%BD%91%E7%AB%99%E6%8F%90%E9%80%9F"><span class="toc-number">5.</span> <span class="toc-text">为网站提速</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6"><span class="toc-number">5.1.</span> <span class="toc-text">加载速度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6"><span class="toc-number">5.2.</span> <span class="toc-text">运行速度</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E5%8C%96-SEO"><span class="toc-number">6.</span> <span class="toc-text">优化 SEO</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Robots"><span class="toc-number">6.1.</span> <span class="toc-text">Robots</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Open-Graph"><span class="toc-number">6.2.</span> <span class="toc-text">Open Graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Structured-Data"><span class="toc-number">6.3.</span> <span class="toc-text">Structured Data</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-CDN"><span class="toc-number">7.</span> <span class="toc-text">使用 CDN</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%90%AF%E6%96%B9%E6%B3%95"><span class="toc-number">7.1.</span> <span class="toc-text">开启方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89-CDN"><span class="toc-number">7.2.</span> <span class="toc-text">自定义 CDN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8-gulp-%E5%8E%8B%E7%BC%A9%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="toc-number">8.</span> <span class="toc-text">尝试使用 gulp 压缩静态文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7"><span class="toc-number">8.1.</span> <span class="toc-text">安装压缩工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gulp-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">8.2.</span> <span class="toc-text">gulp 配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C-gulp"><span class="toc-number">8.3.</span> <span class="toc-text">运行 gulp</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8-babel-%E8%BD%AC%E6%8D%A2%E5%85%BC%E5%AE%B9-ES6"><span class="toc-number">9.</span> <span class="toc-text">尝试使用 babel 转换兼容 ES6</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-gulp-babel-%E5%B7%A5%E5%85%B7"><span class="toc-number">9.1.</span> <span class="toc-text">安装 gulp-babel 工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gulp-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-1"><span class="toc-number">9.2.</span> <span class="toc-text">gulp 配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C-gulp-1"><span class="toc-number">9.3.</span> <span class="toc-text">运行 gulp</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-Service-Worker-%E6%9C%8D%E5%8A%A1"><span class="toc-number">10.</span> <span class="toc-text">安装 Service Worker 服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%80-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="toc-number">10.1.</span> <span class="toc-text">方案一 安装插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%BA%8C-%E4%BD%BF%E7%94%A8-workbox-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE"><span class="toc-number">10.2.</span> <span class="toc-text">方案二 使用 workbox 自定义配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%A1%88%E4%B8%89-%E5%8F%82%E8%80%83%E5%AE%98%E7%BD%91-volantis-sw-js"><span class="toc-number">10.3.</span> <span class="toc-text">方案三 参考官网 volantis-sw.js</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E3%80%8C%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%E3%80%8D%E6%8F%92%E4%BB%B6"><span class="toc-number">11.</span> <span class="toc-text">安装「相关文章」插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E4%B8%8E%E7%BB%9F%E8%AE%A1"><span class="toc-number">12.</span> <span class="toc-text">分析与统计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1"><span class="toc-number">12.1.</span> <span class="toc-text">数据统计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PV-%E5%92%8C-UV"><span class="toc-number">12.1.1.</span> <span class="toc-text">PV 和 UV</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E6%95%B0%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF"><span class="toc-number">12.1.2.</span> <span class="toc-text">字数和阅读时长</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span class="toc-number">12.2.</span> <span class="toc-text">数据分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1"><span class="toc-number">12.2.1.</span> <span class="toc-text">百度统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Google-Analytics"><span class="toc-number">12.2.2.</span> <span class="toc-text">Google Analytics</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%85%BE%E8%AE%AF%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7"><span class="toc-number">12.2.3.</span> <span class="toc-text">腾讯前端性能监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#51LA%E7%BB%9F%E8%AE%A1"><span class="toc-number">12.2.4.</span> <span class="toc-text">51LA统计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%81%B5%E9%9B%80%E7%9B%91%E6%8E%A7"><span class="toc-number">12.2.5.</span> <span class="toc-text">灵雀监控</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CNZZ-%E7%BB%9F%E8%AE%A1"><span class="toc-number">12.2.6.</span> <span class="toc-text">CNZZ 统计</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E8%BF%9B%E9%98%B6%E7%8E%A9%E6%B3%95"><span class="toc-number">13.</span> <span class="toc-text">更多进阶玩法</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3105,10 +3411,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- pjax占位 -->
   </div>
 
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
   <!-- Custom Files side begin -->
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
           <!--此文件用来存放一些不方便取值的变量-->
@@ -3126,14 +3441,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4420,7 +4735,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","sameAs":["https://github.com/volantis-x"],"description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://volantis.js.org/","name":"Chase"}},{"@type":"ListItem","position":2,"item":{"@id":"https://volantis.js.org/archives/","name":"Archive"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Chase","url":"https://volantis.js.org/","keywords":"Volantis,Hexo,Hexo主题,Blog,博客","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},"publisher":{"@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://volantis.js.org?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/"},"publisher":{"@type":"Organization","name":"Chase","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","sameAs":["https://github.com/volantis-x"],"description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://volantis.js.org/","name":"Chase"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Chase","url":"https://volantis.js.org/","keywords":"Volantis,Hexo,Hexo主题,Blog,博客","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。"},"publisher":{"@type":"Organization","name":"Chase","url":"https://volantis.js.org/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://volantis.js.org?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"进阶设定","description":"Volantis 是一个功能丰富、高度模块化的 Hexo 博客主题。得益于其强大的模块化特性，您可以轻松搭建一个极简风格的博客，也可以仿照官网搭建一个多人协作的、包含文档模块的大体量综合型博客。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://volantis.js.org/v5/advanced-settings/"},"author":{"@type":"Person","name":"Our Team","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://volantis.js.org/"},"publisher":{"@type":"Organization","name":"Chase","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://volantis.js.org/v5/advanced-settings/","wordCount":0,"datePublished":"2024-04-14T17:16:05.771Z","dateModified":"2024-03-27T15:49:34.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
